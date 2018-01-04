@@ -3,9 +3,6 @@ install: install-deps #install-flow-typed
 install-deps:
 		npm install
 
-#install-flow-typed:
-#	npm run flow-typed install
-
 start:
 	npm run babel-node -- /home/alex/prj/src/bin/index.js
 
