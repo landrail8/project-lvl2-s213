@@ -1,6 +1,6 @@
 {
   "name": "diffcalchexletproject",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Difference Calculator as Hexlet project",
   "main": "index.js",
   "bin": {
@@ -24,14 +24,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/landrail8/project-lvl2.git"
+    "url": "git+https://github.com/landrail8/project-lvl2-s213.git"
   },
   "author": "madgambler",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/landrail8/project-lvl2/issues"
+    "url": "https://github.com/landrail8/project-lvl2-s213/issues"
   },
-  "homepage": "https://github.com/landrail8/project-lvl2#readme",
+  "homepage": "https://github.com/landrail8/project-lvl2-s213#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
