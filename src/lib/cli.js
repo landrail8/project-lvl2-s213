@@ -1,17 +1,24 @@
-const commander = require('commander');
+const program = require('commander');
 
-commander
-  .option('-h', '--help', 'print description')
-  .parse(process.argv);
+program
+  .version('0.0.1')
+  .description('Compares two configuration files and shows a difference.')
+  .arguments('<file1> <file2>')
+  .action((file1, file2) => {
+    if (typeof file1 === 'undefined') {
+      console.error('no file1 given!');
+      process.exit(1);
+    }
 
-if (commander.help) {
-  console.log('Usage: gendiff [options] <firstConfig> <secondConfig>');
-  console.log('');
-  console.log('Compares two configuration files and shows a difference.');
-  console.log('');
-  console.log('Options:');
-  console.log('');
-  console.log('    -h, --help           output usage information');
-  console.log('    -V, --version        output the version number');
-  console.log('    -f, --format [type]  Output format');
-}
+    if (typeof file2 === 'undefined') {
+      console.error('no file2 given!');
+      process.exit(1);
+    }
+
+    console.log(file1);
+    console.log(file2);
+  });
+
+program.parse(process.argv);
+
+if (!program.args.length) program.help();
