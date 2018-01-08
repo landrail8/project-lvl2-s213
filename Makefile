@@ -4,7 +4,7 @@ install-deps:
 		npm install
 
 start:
-	npm run babel-node -- /home/alex/prj/src/bin/index.js
+	npm run babel-node -- /home/alex/prj/src/bin/gendiff.js
 
 build:
 		rm -rf dist

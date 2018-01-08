@@ -4,7 +4,7 @@
   "description": "Difference Calculator as Hexlet project",
   "main": "index.js",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "gendiff": "dist/bin/gendiff.js"
   },
   "directories": {
     "lib": "lib"
@@ -33,7 +33,6 @@
   },
   "homepage": "https://github.com/landrail8/project-lvl2#readme",
   "devDependencies": {
-    "commander": "^2.2.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.3",
@@ -46,6 +45,7 @@
     "eslint-plugin-jest": "^21.5.0"
   },
   "dependencies": {
+    "commander": "^2.12.2",
     "readline-sync": "^1.4.7"
   },
   "config": {
