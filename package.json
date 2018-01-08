@@ -1,6 +1,6 @@
 {
   "name": "diffcalchexletproject",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Difference Calculator as Hexlet project",
   "main": "index.js",
   "bin": {

@@ -16,7 +16,7 @@ test('compare two json-files', () => {
   // + verbose: true
   // }`;
 
-  const objReturn = '{цкцукцукцук}';
+  // const objReturn = '{цкцукцукцук}';
 
   // expect(f('~/after.json', '~/before.json')).toBe(objReturn);
 });
