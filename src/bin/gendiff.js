@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import f from '../compare';
 
-const program = require('commander');
+import * as program from 'commander';
+import f from '../compare';
 
 program
   .version('0.0.1')
