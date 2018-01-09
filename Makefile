@@ -23,3 +23,6 @@ publish:
 		npm publish
 
 .PHONY: test
+
+startTest:
+	npm run babel-node -- /home/alex/prj/start.js
