@@ -1,8 +1,8 @@
 {
   "name": "diffcalchexletproject",
-  "version": "0.0.17",
+  "version": "0.0.19",
   "description": "Difference Calculator as Hexlet project",
-  "main": "dist/bin/gendiff.js",
+  "main": "dist/compare.js",
   "bin": {
     "gendiff": "dist/bin/gendiff.js"
   },
@@ -17,6 +17,7 @@
   ],
   "scripts": {
     "test": "jest --watch",
+    "test:coverage": "jest --coverage",
     "babel-node": "babel-node",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build",
