@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import program from 'commander';
-import f from '../compare';
+import f from '../getReport';
 
 program
   .version('0.0.1')
