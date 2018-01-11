@@ -12,7 +12,7 @@ const f = (file1, file2) => {
   const keys2 = Object.keys(obj2);
   const key12 = keys1.concat(keys2);
 
-  const arrAll = [...new Set(key12)];// key12.filter((item, pos) => key12.indexOf(item) === pos);
+  const arrAll = [...new Set(key12)];
 
   const objReturn = {};
 
