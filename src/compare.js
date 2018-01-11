@@ -20,7 +20,7 @@ const f = (file1, file2) => {
     if ((typeof obj1[currentValue] !== 'undefined')
       && (typeof obj2[currentValue] !== 'undefined')
       && (obj1[currentValue] === obj2[currentValue])) {
-      objReturn[currentValue] = obj1[currentValue];
+      objReturn[`  ${currentValue}`] = obj1[currentValue];
     }
 
     if ((typeof obj1[currentValue] !== 'undefined')
