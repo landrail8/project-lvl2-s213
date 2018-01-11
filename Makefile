@@ -4,7 +4,8 @@ install-deps:
 		npm install
 
 start:
-	npm run babel-node -- src/bin/gendiff.js __tests__/__fixtures__/before.json __tests__/__fixtures__/after.json
+	# npm run babel-node -- src/bin/gendiff.js __tests__/__fixtures__/before.json __tests__/__fixtures__/after.json
+	npm run babel-node -- src/bin/gendiff.js __tests__/__fixtures__/before.yaml __tests__/__fixtures__/after.yaml
 
 build:
 		rm -rf dist
@@ -25,4 +26,5 @@ publish:
 .PHONY: test
 
 startTest:
-	npm run babel-node -- /home/alex/prj/start.js
+	npm run babel-node -- src/bin/gendiff.js
+	#npm run babel-node -- /home/alex/prj/start.js

@@ -1,6 +1,6 @@
 {
   "name": "diffcalchexletproject",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "Difference Calculator as Hexlet project",
   "main": "dist/compare.js",
   "bin": {
@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "commander": "^2.12.2",
+    "js-yaml": "^3.10.0",
     "readline-sync": "^1.4.7"
   },
   "config": {
