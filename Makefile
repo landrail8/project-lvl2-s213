@@ -5,7 +5,7 @@ install-deps:
 
 start:
 	# npm run babel-node -- src/bin/gendiff.js __tests__/__fixtures__/before.json __tests__/__fixtures__/after.json
-	npm run babel-node -- src/bin/gendiff.js __tests__/__fixtures__/before.yaml __tests__/__fixtures__/after.yaml
+	npm run babel-node -- src/bin/gendiff.js __tests__/__fixtures__/before.ini __tests__/__fixtures__/after.ini
 
 build:
 		rm -rf dist

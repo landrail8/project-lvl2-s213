@@ -2,6 +2,7 @@
 import fs from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
+import ini from 'ini';
 
 const f = (file1, file2) => {
   const text1 = fs.readFileSync(file1, 'utf8');
@@ -18,6 +19,11 @@ const f = (file1, file2) => {
   if (path.extname(file1) === '.yaml') {
     obj1 = yaml.safeLoad(text1);
     obj2 = yaml.safeLoad(text2);
+  }
+
+  if (path.extname(file1) === '.ini') {
+    obj1 = ini.parse(text1);
+    obj2 = ini.parse(text2);
   }
 
   const keys1 = Object.keys(obj1);
