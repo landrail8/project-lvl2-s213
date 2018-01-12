@@ -1,8 +1,8 @@
 {
   "name": "diffcalchexletproject",
-  "version": "0.0.27",
+  "version": "0.0.28",
   "description": "Difference Calculator as Hexlet project",
-  "main": "dist/compare.js",
+  "main": "dist/index.js",
   "bin": {
     "gendiff": "dist/bin/gendiff.js"
   },
