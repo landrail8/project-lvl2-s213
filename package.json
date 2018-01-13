@@ -1,6 +1,6 @@
 {
   "name": "diffcalchexletproject",
-  "version": "0.0.29",
+  "version": "0.0.30",
   "description": "Difference Calculator as Hexlet project",
   "main": "dist/index.js",
   "bin": {
@@ -50,9 +50,10 @@
   },
   "dependencies": {
     "commander": "^2.12.2",
-    "js-yaml": "^3.10.0",
     "ini": "^1.3.5",
-    "readline-sync": "^1.4.7"
+    "js-yaml": "^3.10.0",
+    "readline-sync": "^1.4.7",
+    "lodash": "^4.17.4"
   },
   "config": {
     "unsafe-perm": true
