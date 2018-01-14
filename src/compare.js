@@ -3,7 +3,9 @@ import fs from 'fs';
 import path from 'path';
 import _ from 'lodash';
 
-import parser from './getParser';
+import parse from './getParser';
+
+const getFormat = file => path.extname(file).replace('.', '');
 
 const f = (file1, file2) => {
   // получим содержание файлов как текст
@@ -13,13 +15,11 @@ const f = (file1, file2) => {
   const text1 = fs.readFileSync(file1, 'utf8');
   const text2 = fs.readFileSync(file2, 'utf8');
 
-  const format1 = path.extname(file1).replace('.', '');
-  const format2 = path.extname(file2).replace('.', '');
+  const format1 = getFormat(file1);
+  const format2 = getFormat(file2);
 
-  console.log(parser(format1)(text1));
-
-  const obj1 = parser(format1)(text1);
-  const obj2 = parser(format2)(text2);
+  const obj1 = parse(format1)(text1);
+  const obj2 = parse(format2)(text2);
 
   const key12 = _.union(_.keys(obj1), _.keys(obj2));
 
