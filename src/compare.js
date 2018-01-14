@@ -24,25 +24,25 @@ const f = (file1, file2) => {
   const key12 = _.union(_.keys(obj1), _.keys(obj2));
 
   return key12.reduce((acc, currentValue) => {
-    if ((obj1[currentValue] !== 'undefined')
-      && (obj2[currentValue] !== 'undefined')
+    if ((obj1[currentValue] !== undefined)
+      && (obj2[currentValue] !== undefined)
       && (obj1[currentValue] === obj2[currentValue])) {
       return { ...acc, [`  ${currentValue}`]: obj1[currentValue] };
     }
 
-    if ((obj1[currentValue] !== 'undefined')
-      && (obj2[currentValue] !== 'undefined')
+    if ((obj1[currentValue] !== undefined)
+      && (obj2[currentValue] !== undefined)
       && (obj1[currentValue] !== obj2[currentValue])) {
       return { ...acc, [`+ ${currentValue}`]: obj2[currentValue], [`- ${currentValue}`]: obj1[currentValue] };
     }
 
-    if ((obj1[currentValue] !== 'undefined')
-      && (obj2[currentValue] === 'undefined')) {
+    if ((obj1[currentValue] !== undefined)
+      && (obj2[currentValue] === undefined)) {
       return { ...acc, [`- ${currentValue}`]: obj1[currentValue] };
     }
 
-    if ((obj2[currentValue] !== 'undefined')
-      && (obj1[currentValue] === 'undefined')) {
+    if ((obj2[currentValue] !== undefined)
+      && (obj1[currentValue] === undefined)) {
       return { ...acc, [`+ ${currentValue}`]: obj2[currentValue] };
     }
 
